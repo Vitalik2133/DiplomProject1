@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{06A1B032-20B3-4022-A42A-61EC7F24A9D1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DiplomProject</RootNamespace>
+    <AssemblyName>DiplomProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_Molotilov403_ISiP_DiplomBaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>_Molotilov403_ISiP_DiplomBaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Авторизация.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Авторизация.Designer.cs">
+      <DependentUpon>Авторизация.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Аккаунт_сотрудника.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Аккаунт_сотрудника.Designer.cs">
+      <DependentUpon>Аккаунт_сотрудника.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Вторая_категория.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Вторая_категория.Designer.cs">
+      <DependentUpon>Вторая_категория.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Первая_категория.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Первая_категория.Designer.cs">
+      <DependentUpon>Первая_категория.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Пятая_категория.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Пятая_категория.Designer.cs">
+      <DependentUpon>Пятая_категория.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Регистрация.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Регистрация.Designer.cs">
+      <DependentUpon>Регистрация.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Редактировать_товары.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Редактировать_товары.Designer.cs">
+      <DependentUpon>Редактировать_товары.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Сообщить_об_ошибке.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Сообщить_об_ошибке.Designer.cs">
+      <DependentUpon>Сообщить_об_ошибке.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Сотрудники.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Сотрудники.Designer.cs">
+      <DependentUpon>Сотрудники.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Третья_категория.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Третья_категория.Designer.cs">
+      <DependentUpon>Третья_категория.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Четвертая_категория.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Четвертая_категория.Designer.cs">
+      <DependentUpon>Четвертая_категория.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Шестая_категория.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Шестая_категория.Designer.cs">
+      <DependentUpon>Шестая_категория.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Авторизация.resx">
+      <DependentUpon>Авторизация.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Аккаунт_сотрудника.resx">
+      <DependentUpon>Аккаунт_сотрудника.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Вторая_категория.resx">
+      <DependentUpon>Вторая_категория.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Первая_категория.resx">
+      <DependentUpon>Первая_категория.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Пятая_категория.resx">
+      <DependentUpon>Пятая_категория.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Регистрация.resx">
+      <DependentUpon>Регистрация.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Редактировать_товары.resx">
+      <DependentUpon>Редактировать_товары.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Сообщить_об_ошибке.resx">
+      <DependentUpon>Сообщить_об_ошибке.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Сотрудники.resx">
+      <DependentUpon>Сотрудники.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Третья_категория.resx">
+      <DependentUpon>Третья_категория.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Четвертая_категория.resx">
+      <DependentUpon>Четвертая_категория.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Шестая_категория.resx">
+      <DependentUpon>Шестая_категория.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="_Molotilov403_ISiP_DiplomBaseDataSet.xsc">
+      <DependentUpon>_Molotilov403_ISiP_DiplomBaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="_Molotilov403_ISiP_DiplomBaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>_Molotilov403_ISiP_DiplomBaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="_Molotilov403_ISiP_DiplomBaseDataSet.xss">
+      <DependentUpon>_Molotilov403_ISiP_DiplomBaseDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\122454.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
